@@ -198,7 +198,7 @@ video:hover {
 
 @media (min-width: 1201px) {
     .navbar .IMAGEM {
-        max-width: 2200px; /* Aumenta o tamanho da logo para telas grandes */
+        max-width: 500px; /* Aumenta o tamanho da logo para telas grandes */
         height: auto;
     }
 
