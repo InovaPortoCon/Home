@@ -13,18 +13,29 @@ body {
     /* Gradiente com opacidade aumentada */
 }
 
-/* Estilo da imagem do logo */
-.IMAGEM {
+/* Estilo do cabeçalho (navbar) */
+.header {
+    background-color: #ffffff; /* Define o fundo da navbar como branco */
+    border-bottom: 5px solid #e44b12; /* Borda laranja na parte inferior da navbar */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.header .IMAGEM {
     max-width: 100px; /* Tamanho máximo da logo */
     height: 30px;
     transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
 }
 
-.IMAGEM:hover {
+.header .IMAGEM:hover {
     transform: scale(1.1); /* Efeito de zoom na logo */
 }
 
-/* Estilo dos links no cabeçalho */
 .header a {
     display: inline-block;
     margin-top: 10px;
@@ -99,7 +110,7 @@ video:hover {
     border-top: 5px solid #e44b12;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -118,7 +129,7 @@ video:hover {
 
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
-    .IMAGEM {
+    .header .IMAGEM {
         max-width: 80px; /* Reduz o tamanho da logo em telas menores */
         height: auto;
     }
@@ -163,7 +174,7 @@ video:hover {
 
 /* Media Queries para desktops e notebooks */
 @media (min-width: 769px) and (max-width: 1200px) {
-    .IMAGEM {
+    .header .IMAGEM {
         max-width: 120px; /* Aumenta o tamanho da logo para telas médias */
         height: auto;
     }
@@ -190,7 +201,7 @@ video:hover {
 }
 
 @media (min-width: 1201px) {
-    .IMAGEM {
+    .header .IMAGEM {
         max-width: 150px; /* Aumenta o tamanho da logo para telas grandes */
         height: auto;
     }
