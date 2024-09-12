@@ -222,3 +222,8 @@ video:hover {
         max-width: 200px; /* Mantém o tamanho máximo da logo no rodapé para telas grandes */
     }
 }
+/* Prefixos de fornecedores são menos necessários com o tempo, mas alguns podem ser necessários */
+.element {
+    -webkit-border-radius: 10px; /* Chrome, Safari */
+    border-radius: 10px;
+}
