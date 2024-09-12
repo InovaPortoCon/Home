@@ -1,0 +1,217 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, rgba(16, 64, 143, 0.8), rgba(228, 75, 18, 0.8));
+    /* Gradiente com opacidade aumentada */
+}
+
+/* Estilo da imagem do logo */
+.IMAGEM {
+    max-width: 100px; /* Tamanho máximo da logo */
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+.IMAGEM:hover {
+    transform: scale(1.1); /* Efeito de zoom na logo */
+}
+
+/* Estilo dos links no cabeçalho */
+.header a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e44b12;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #e44b12; /* Borda laranja para o link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animação suave de cor */
+}
+
+.header a:hover {
+    background-color: #e44b12;
+    color: #ffffff;
+}
+
+/* Estilo do vídeo */
+.video-container {
+    position: relative;
+    width: 600px; /* Define a largura fixa para o vídeo */
+    height: 450px; /* Define a altura fixa para o vídeo */
+    margin: 20px auto; /* Centraliza o vídeo horizontalmente */
+    background-color: #000; /* Cor de fundo caso o vídeo não carregue */
+    border: 5px solid #10408f; /* Contorno azul */
+    border-radius: 15px; /* Cantos arredondados mais acentuados */
+    overflow: hidden; /* Oculta o excesso do vídeo */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que o vídeo cubra o contêiner sem distorção */
+    background-color: #000; /* Cor de fundo caso o vídeo não carregue */
+    transition: border-color 0.3s ease; /* Animação suave para o contorno */
+}
+
+video:hover {
+    border-color: #e44b12; /* Mudar a cor do contorno ao passar o mouse */
+}
+
+/* Estilo dos editais */
+.editais {
+    text-align: center;
+    margin: 40px auto; /* Ajusta a margem para criar espaço ao redor dos editais */
+}
+
+.editais a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44b12;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave de cor e escala */
+}
+
+.editais a:hover {
+    background-color: #10408f;
+    transform: scale(1.05); /* Efeito de zoom nos botões */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #ffffff;
+    border-top: 5px solid #e44b12;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer img {
+    max-width: 200px; /* Tamanho máximo da logo no rodapé */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+.footer img:hover {
+    transform: scale(1.1); /* Efeito de zoom na logo */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .IMAGEM {
+        max-width: 80px; /* Reduz o tamanho da logo em telas menores */
+        height: auto;
+    }
+
+    .header a {
+        font-size: 16px; /* Reduz o tamanho da fonte dos links */
+        padding: 8px 16px; /* Ajusta o padding dos links */
+    }
+
+    .video-container {
+        width: 100%; /* Ajusta a largura do vídeo para 100% da tela */
+        max-width: none; /* Remove a largura máxima */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding-top: 75%; /* Ajusta o aspecto do vídeo para 4:3 */
+    }
+
+    .editais a {
+        font-size: 14px; /* Reduz o tamanho da fonte dos botões de edital */
+        padding: 8px 16px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 150px; /* Reduz o tamanho da logo no rodapé em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .header a {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte dos links em telas muito pequenas */
+        padding: 6px 12px; /* Ajusta o padding dos links */
+    }
+
+    .editais a {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte dos botões de edital */
+        padding: 6px 12px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 120px; /* Reduz o tamanho da logo no rodapé em telas muito pequenas */
+    }
+}
+
+/* Media Queries para desktops e notebooks */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .IMAGEM {
+        max-width: 120px; /* Aumenta o tamanho da logo para telas médias */
+        height: auto;
+    }
+
+    .header a {
+        font-size: 20px; /* Aumenta o tamanho da fonte dos links */
+        padding: 12px 24px; /* Ajusta o padding dos links */
+    }
+
+    .video-container {
+        width: 80%; /* Ajusta a largura do vídeo para 80% da tela */
+        max-width: 600px; /* Define uma largura máxima para telas médias */
+        height: 450px; /* Mantém a altura fixa */
+    }
+
+    .editais a {
+        font-size: 18px; /* Aumenta o tamanho da fonte dos botões de edital */
+        padding: 12px 24px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 180px; /* Ajusta o tamanho da logo no rodapé para telas médias */
+    }
+}
+
+@media (min-width: 1201px) {
+    .IMAGEM {
+        max-width: 150px; /* Aumenta o tamanho da logo para telas grandes */
+        height: auto;
+    }
+
+    .header a {
+        font-size: 22px; /* Aumenta o tamanho da fonte dos links */
+        padding: 14px 28px; /* Ajusta o padding dos links */
+    }
+
+    .video-container {
+        width: 70%; /* Ajusta a largura do vídeo para 70% da tela */
+        max-width: 600px; /* Define uma largura máxima para telas grandes */
+        height: 450px; /* Mantém a altura fixa */
+    }
+
+    .editais a {
+        font-size: 20px; /* Aumenta o tamanho da fonte dos botões de edital */
+        padding: 14px 28px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 200px; /* Mantém o tamanho máximo da logo no rodapé para telas grandes */
+    }
+}
