@@ -126,7 +126,7 @@ video:hover {
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
     .navbar .IMAGEM {
-        max-width: 80px; /* Reduz o tamanho da logo em telas menores */
+        max-width: 500px; /* Reduz o tamanho da logo em telas menores */
         height: auto;
     }
 
@@ -198,7 +198,7 @@ video:hover {
 
 @media (min-width: 1201px) {
     .navbar .IMAGEM {
-        max-width: 220px; /* Aumenta o tamanho da logo para telas grandes */
+        max-width: 2200px; /* Aumenta o tamanho da logo para telas grandes */
         height: auto;
     }
 
