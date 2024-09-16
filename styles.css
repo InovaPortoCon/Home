@@ -227,3 +227,62 @@ video:hover {
     -webkit-border-radius: 10px; /* Chrome, Safari */
     border-radius: 10px;
 }
+/* Media Queries para dispositivos de 6,5 a 6,9 polegadas */
+@media (min-width: 414px) and (max-width: 768px) {
+    /* Estilo para celulares com largura entre 414px e 768px */
+    
+    .navbar .IMAGEM {
+        max-width: 300px; /* Ajusta o tamanho da logo para telas de celulares maiores */
+        height: auto;
+    }
+
+    .navbar a {
+        font-size: 16px; /* Ajusta o tamanho da fonte dos links para telas maiores */
+        padding: 8px 16px; /* Ajusta o padding dos links */
+    }
+
+    .video-container {
+        width: 100%; /* Ajusta a largura do vídeo para 100% da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding-top: 56.25%; /* Ajusta o aspecto do vídeo para 16:9 */
+    }
+
+    .editais a {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos botões de edital */
+        padding: 8px 16px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 150px; /* Ajusta o tamanho da logo no rodapé para telas maiores */
+    }
+}
+
+/* Adaptação adicional para dispositivos que podem ter variações maiores */
+@media (min-width: 360px) and (max-width: 414px) {
+    /* Estilo para celulares com largura entre 360px e 414px */
+
+    .navbar .IMAGEM {
+        max-width: 250px; /* Ajusta o tamanho da logo para telas menores dentro do intervalo */
+        height: auto;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos links para telas menores */
+        padding: 6px 12px; /* Ajusta o padding dos links */
+    }
+
+    .video-container {
+        width: 100%; /* Ajusta a largura do vídeo para 100% da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding-top: 56.25%; /* Ajusta o aspecto do vídeo para 16:9 */
+    }
+
+    .editais a {
+        font-size: 12px; /* Ajusta o tamanho da fonte dos botões de edital */
+        padding: 6px 12px; /* Ajusta o padding dos botões de edital */
+    }
+
+    .footer img {
+        max-width: 120px; /* Ajusta o tamanho da logo no rodapé para telas menores dentro do intervalo */
+    }
+}
