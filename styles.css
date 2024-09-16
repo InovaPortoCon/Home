@@ -124,49 +124,7 @@ video:hover {
 }
 
 /* Media Queries para dispositivos móveis */
-@media (max-width: 768px) {
-    .navbar .IMAGEM {
-        max-width: 500px; /* Reduz o tamanho da logo em telas menores */
-        height: auto;
-    }
 
-    .navbar a {
-        font-size: 16px; /* Reduz o tamanho da fonte dos links */
-        padding: 8px 16px; /* Ajusta o padding dos links */
-    }
-
-    .video-container {
-        width: 100%; /* Ajusta a largura do vídeo para 100% da tela */
-        max-width: none; /* Remove a largura máxima */
-        height: auto; /* Ajusta a altura automaticamente */
-        padding-top: 75%; /* Ajusta o aspecto do vídeo para 4:3 */
-    }
-
-    .editais a {
-        font-size: 14px; /* Reduz o tamanho da fonte dos botões de edital */
-        padding: 8px 16px; /* Ajusta o padding dos botões de edital */
-    }
-
-    .footer img {
-        max-width: 150px; /* Reduz o tamanho da logo no rodapé em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        font-size: 14px; /* Reduz ainda mais o tamanho da fonte dos links em telas muito pequenas */
-        padding: 6px 12px; /* Ajusta o padding dos links */
-    }
-
-    .editais a {
-        font-size: 12px; /* Reduz ainda mais o tamanho da fonte dos botões de edital */
-        padding: 6px 12px; /* Ajusta o padding dos botões de edital */
-    }
-
-    .footer img {
-        max-width: 120px; /* Reduz o tamanho da logo no rodapé em telas muito pequenas */
-    }
-}
 
 /* Media Queries para desktops e notebooks */
 @media (min-width: 769px) and (max-width: 1200px) {
